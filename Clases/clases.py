@@ -19,6 +19,8 @@ class Circulo:
     
     @radio.setter    
     def radio(self, value):
+        if type(value) != int:
+            raise ValueError("Solo se aceptan numeros enteros")
         if value < 0:
             raise ValueError("Un circulo con radio negativo no existe!, solo se lo puede imaginar")
         elif value == 0:
@@ -41,26 +43,21 @@ class Circulo:
             for j in range((self.radio*2)+1):
                 ec = ((j)-self.radio)**2 + ((i)-self.radio)**2
                 res = int((self.radio)**2)
-                # print("ecuacion", ec)
-                # print("Resultado", res)
                 if ((j)-self.radio)**2 + ((i)-self.radio)**2 <= int((self.radio)**2):
                     print("*",end="")
                 else:
                     print(" ",end="")
-            
             print(" ")
-        
-        
 
     def __str__(self):
         self.representacion()
-        return "Hola soy un circulo y mi radio es de "+str(self.radio)
+        return "Hola soy un circulo y la longitud de mi radio es "+str(self.radio)
 
 
 
 
 if __name__ == '__main__':
     c1 = Circulo(3)
-    c2 = c1.multiplicar(2)
+    c2 = c1.multiplicar(1)
     c2.radio=2
     print(c2)
