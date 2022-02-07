@@ -29,23 +29,23 @@ class Circulo:
 
     def area(self):
         """
-        Testing area function
+        Testing funcion area
         >>> Circulo(radio = 2).area()
         12.566370614359172
 
-        Testing zero number
+        Testing radio cero area
         >>> Circulo(radio = 0).area()
         Traceback (most recent call last):
         ...
         Exception: Un circulo de radio cero no existe!, solo es un punto
         
-        Testing negative number
+        Testing numero negativo area
         >>> Circulo(radio=-1).area()
         Traceback (most recent call last):
         ...
         Exception: Un circulo con radio negativo no existe!, solo se lo puede imaginar
 
-        Testing int number
+        Testing numero entero area
         >>> Circulo(radio="1").area()
         Traceback (most recent call last):
         ...
@@ -55,23 +55,23 @@ class Circulo:
 
     def perimetro(self):
         """
-        Testing perimetro function
+        Testing funcion perimetro
         >>> Circulo(radio = 2).perimetro()
         12.566370614359172
 
-        Testing zero number
+        Testing radio cero perimetro
         >>> Circulo(radio = 0).perimetro()
         Traceback (most recent call last):
         ...
         Exception: Un circulo de radio cero no existe!, solo es un punto
         
-        Testing negative number
+        Testing numero negativo perimetro
         >>> Circulo(radio=-1).perimetro()
         Traceback (most recent call last):
         ...
         Exception: Un circulo con radio negativo no existe!, solo se lo puede imaginar
 
-        Testing int number
+        Testing numero entero perimetro
         >>> Circulo(radio="1").perimetro()
         Traceback (most recent call last):
         ...
@@ -83,23 +83,23 @@ class Circulo:
 
     def multiplicar(self,numero):
         """
-        Testing multiplicar function
+        Testing funcion multiplicar
         >>> type(Circulo(radio=1).multiplicar(numero=1))
         <class '__main__.Circulo'>
         
-        Testing zero 
+        Testing radio cero multiplicar
         >>> Circulo(radio=1).multiplicar(numero=0)
         Traceback (most recent call last):
         ...
         Exception: Un circulo de radio cero no existe!, solo es un punto
 
-        Testing negative number
+        Testing numero negativo multiplicar
         >>> Circulo(radio=1).multiplicar(numero=-1)
         Traceback (most recent call last):
         ...
         Exception: Un circulo con radio negativo no existe!, solo se lo puede imaginar
 
-        Testing int number
+        Testing numero entero multiplicar
         >>> Circulo(radio=1).multiplicar(numero="1")
         Traceback (most recent call last):
         ...
