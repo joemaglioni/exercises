@@ -1,11 +1,11 @@
 import random
 import math
 
-def crearLista():
+def crear_lista():
     """
-    Testing crearLista
+    Testing crear lista
     >>> random.seed(1)
-    >>> crearLista()
+    >>> crear_lista()
     [{'id': 1, 'edad': 18}, {'id': 2, 'edad': 73}, {'id': 3, 'edad': 98}, {'id': 4, 'edad': 9}, {'id': 5, 'edad': 33}, {'id': 6, 'edad': 16}, {'id': 7, 'edad': 64}, {'id': 8, 'edad': 98}, {'id': 9, 'edad': 58}, {'id': 10, 'edad': 61}]
     """
 
@@ -19,7 +19,7 @@ def ordenar(lista):
 
     """
     Testing ordenar lista
-    >>> ordenar(lista=crearLista())
+    >>> ordenar(lista=crear_lista())
     ID de la persona mas joven 6
     ID de la persona mas vieja 10
     [{'id': 10, 'edad': 98}, {'id': 1, 'edad': 84}, {'id': 9, 'edad': 78}, {'id': 5, 'edad': 63}, {'id': 8, 'edad': 56}, {'id': 7, 'edad': 50}, {'id': 2, 'edad': 49}, {'id': 3, 'edad': 27}, {'id': 4, 'edad': 13}, {'id': 6, 'edad': 4}]
